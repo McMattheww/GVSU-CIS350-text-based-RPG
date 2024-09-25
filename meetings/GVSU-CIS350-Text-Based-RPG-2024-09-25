@@ -1,0 +1,29 @@
+# CIS350 Meeting Instructions
+
+Hold a team meeting at least once a week in some format.  Copy the following template below into a new document, naming it 
+GVSU-CIS350-TEAMNAME-YYYY-MM-DD (replacing TEAMNAME with your team's name and the appropriate date fields).  Commit it to this folder, 
+ensuring it is up by each Sunday by 11:59pm.  There should be a unique document for each meeting held.
+
+## Meeting minutes template
+
+Team name: Text Based RPG
+
+Members present: Nathan Lenters and Matthew Vansloot
+
+Date: Sept 25 2024
+
+Time: 2:30 pm
+
+Discussion points:
+
+* Basic UI having a character object having them move between different areas -> this is fundamental portion
+* Adding in a combat system
+* Discussed how to track progress and plan sprints using possibly bit bucket
+* Talked about the proposal after midterm and how it would look i.e. what we’re planning on doing and how we plan on meeting the requirements
+
+Goals for next week (include responsibilities)
+* Choose a team lead
+* Decide which way to track progress and plan sprints and create milestones
+* Work towards analyzing features and project proposals
+* Create a Trello or  Jira or some other form of organization tool
+
