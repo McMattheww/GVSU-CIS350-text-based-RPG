@@ -1,13 +1,18 @@
-# Team Name
+# Text-Based-RPG
 
-Project description (~1 paragraph)
+The main feature of the game is you have a player character with certain statistics, health points, hunger level, inventory, etc. 
+As you engage in combat with enemies or deal with environemtal hazards, these statistics are affected. 
+Where the player is in the game world will be tracked on a room-by-room basis, like the different rooms of a dungeon. 
 
 ## Team Members and Roles
 
-* Member 1 (Role 1, Role 2)
-* Member 2 (Role 3, Role 4)
-* Member 3 (Role 5, Role 6)
+* Matthew VanSlooten (Lead developer)
+* Nathan Lenters (Developer)
 
 ## Prerequisites
 
+TBD
+
 ## Run Instructions
+
+TBD
