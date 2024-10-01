@@ -7,7 +7,7 @@ Where the player is in the game world will be tracked on a room-by-room basis, l
 ## Team Members and Roles
 
 * Matthew VanSlooten (Lead developer)
-* Nathan Lenters (Developer)
+* Nate Lenters (Developer)
 
 ## Prerequisites
 
