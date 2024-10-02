@@ -1,0 +1,33 @@
+Team name: Text Based RPG
+
+Members present: Nathan Lenters and Matthew Vansloot
+
+Date: Oct, 2, 2024
+
+Time: 2:30 pm
+
+Discussion points:
+* Milestone one refining requirements
+* Creating tickets/diagram for Jira
+* Reason for picking Jira: Trello is more generalized and not as computing specific 
+* Basic Gameplay mechanics such as world layout
+* UML Diagrams 
+* Possible Bloated requirements and maybe cutting them up into smaller peices tomake the requirements more precise
+* talked about trello being a more recent developement and having a more colorful UI so possibly using Trello instead
+* Trello having some good templates to use possibly better than Jira
+* Which executable we are using-> PyInstaller executable progress -> Found? Not Found?
+* What is being used for the GUI and if we have decided on anything along those lines yet or not
+* For GUI using PyGame and mostly text based imaging or possibly creating basic imaging like squares and circles to represent the player and where enemies might be
+* 
+
+Goals for next week (include responsibilities)
+* Get PyInstaller onto our computers and package it so it is distributable in our game
+* Create a Trello board and get all team members on board and create some of the first ticket list of tasks that need to be completed
+* Decide on other roles and responsibilities
+* Update roles on github and responsibilites 
+* Documented what is being done on github for professors
+* Decide what executable
+* Create basic Templates for Trello
+* Look into tkinter for GUI and possibly using that for our game
+* Create a communication schedule for the team about reaching out to each other most likely every other day
+* 
