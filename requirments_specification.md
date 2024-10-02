@@ -15,13 +15,19 @@
 - "Item" objects shall populate rooms
 
 - Each set of interconnected rooms that only have changes in either the x OR y value of their (x, y) coordinates, but not both, from one 
-room to the next shall count as "in line of sight" of eachother
+room to the next shall count as "in line of sight" of each other
+
+- Certain actions such as movement, attacking, or enemies becoming alerted should create a "sound" event, 
+
+- Sound event should propagate a specified range amount to other adjacent rooms, ignoring if the rooms have line of sight
 
 ####Movement:
 
 - User shall be able to move player character to rooms with adjacent (x, y) coordinates
 
-- "Enemy" objects shall become alerted when they "see" Player character, when both are in rooms in line of sight of eachother
+- "Enemy" objects shall become alerted when they "see" Player character, when both are in rooms in line of sight of each other
+
+- Enemy objects shall become alerted when they "hear" player character, when the enemy objects are located in a room which sound has reached
 
 - "Enemy" objects alerted of player's presence shall pursue player, moving to rooms with adjacent (x, y) coordinates
 
@@ -29,16 +35,32 @@ room to the next shall count as "in line of sight" of eachother
 
 ####Combat
 
-- User shall be able to expend turn attacking an enemy object in the same room as their player character
+- Enemy Objects should have "HP" statistic representing health
 
-- The strength of user's attack shall vary based on equipped weapon
+- Player Character object should track statistics related to combat. HP, etc.
+
+- User shall be able to expend turn attacking an enemy object in the same room as their player character, reducing enemy object HP based on the attack strength
+
+- The strength of user's attack shall vary based on equipped weapon item
 
 - Alerted enemy objects already in the same room as the player character shall expend their turn performing an attack on the player character
 
-- When player character has ranged weapon equipped, user shall be able to expend turn performing ranged attack on an enemy object in a room 
-in line of sight of the player character
+- User shall be able to expend turn performing ranged attack on an enemy object in a room in line of sight of the player character's current room
 
-- Player Character object should track statistics related to combat. HP, etc.
+- Player character must have ranged weapon equipped in order to perform ranged attack
+
+- Player character must have at least one ammunition item associated with their equipped range weapon in order to perform ranged attack
+
+- Performing ranged attack shall drain ammunition from the player character inventory
+
+- User attacking shall drain durability rating of equipped weapon
+
+- Attacks should have a probability of missing, doing no damage to target
+
+- Weapons that reach 0 durability or less should be destroyed, or removed from the game
+
+- After an equipped weapon is destroyed, the player shall be left with wit an "empty" weapon equipped, representing no weapon
+
 
 ####Items
 
