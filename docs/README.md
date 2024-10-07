@@ -6,8 +6,8 @@ Where the player is in the game world will be tracked on a room-by-room basis, l
 
 ## Team Members and Roles
 
-* Matthew VanSlooten (Lead developer)
-* Nate Lenters (Developer)
+* Matthew VanSlooten (Project Manager, Programmer, Tester)
+* Nate Lenters (Programmer, Tester, Records Keeper)
 
 ## Prerequisites
 
