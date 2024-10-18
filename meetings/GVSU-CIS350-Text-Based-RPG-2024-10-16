@@ -1,0 +1,29 @@
+Team name: Text Based RPG
+
+Members present: Nathan Lenters and Matthew Vansloot
+
+Date: Oct, 16, 2024
+
+Time: 2:30 pm
+
+Discussion points:
+* For the presentation its more of just a demo and explaining what the project will be about
+* The UML diagram and some stuff about how the game works
+* Not so much explaining how to play the game but more just what it is like
+* How tasks should flow and how having a small amount of tasks can be a good thing because of an increased sense of accomplishment
+* Chose Pygame and tested with pyinstaller includes graphics and input which is all we will need 
+* Overall only need pygame and pyinstaller similar functionality to Tkinter
+* What would be considered functional and non-functional: some functional would be a way to save the game; non functional would be stuff like performance of the game and how fast it runs and availability
+* Developement status where we are in that area
+* split the tickets half and half between each other which ones we were going to do and what we are more comfortable with
+* Fallout topic sci-fi or maybe post apocalypse/Fantasy
+* 
+
+Goals for next week (include responsibilities)
+* Create a gantt or burn down chart
+* Plan out project and what we should speak to how the game is working and maybe some non functional stuff we are trying to include
+* refine our functional and non-functional requirements and list them out for how we want our game to look
+* Possibly start the sprint? after presentation will start sprint
+* Add a public access to github for our specific links to what we are working on* Decide what our game name is
+* Decide on if there should be 4 players or just the one player for time constraints and difficulty with including that in the coding portion of the project
+* 
