@@ -1,13 +1,12 @@
 # Overview
-<Describe the purpose of this document in 1 paragraph of less … hint: it is
-your SRS>
+Here is a list specifying the requirments we plan on implementing in our project.
 # Functional Requirements
-1. <Name of Feature 1>
-1. <Functional Requirement 1>
-2. <Functional Requirement 2>
-3. <And so on>
+1. Player Movement
+1. Player shall be able to walk, moving one space in a turn
+2. Player shall be able to sprint, moving two spaces in a turn, but using addiotional stamina
+3. Player movement shall be restricted by the amount of adjacent rooms
 # Non-Functional Requirements
-2. <Name of Feature 1>
-1. <Non-Functional Requirement 1>
-2. <Non-Functional Requirement 2>
-3. <And so on>
+2. Portability
+1. User shall be able to run executable on Windows
+2. User shall be able to run executable on MacOS
+3. User shall be able to run executable on Linux
