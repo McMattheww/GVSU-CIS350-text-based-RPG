@@ -1,0 +1,34 @@
+Team name: Text Based RPG
+
+Members present: Nathan Lenters and Matthew Vansloot
+
+Date: Oct, 23, 2024
+
+Time: 2:30 pm
+
+Discussion points:
+* Line of sight ideas for our game in terms of diagnols-came up with possible idea to do a matrix while the math could get complicated using coordinates
+	* hard limit for line of sight would only be 4 squares away so it wouldnt be do hard to do a matrix
+* impliment a cap for the rooms so there would be no diagnols available more so corridors
+* collision logic where collision only happens when two entities are in the same tile and don't have to worry about collision in other areas yet
+* Tasks becoming more broad on trello board being easier to define tasks and impliment them in how we code
+* Having the problem defined and now we just have to fit the pieces together and how this is our strong suit
+* the more defined the trello tasks the better -praharsha
+* Possibly adding more stretch goals if we get tasks done early just for things to do
+* New ways to define tasks and organize/prioritize them
+* How our presentation went and went over the feedback what we liked and disliked about it. What we would use and what we wouldn't use in terms of implementation for our RPG game
+	* Things we liked were people suggesting new enemies and possilby adding a loot goblin type enemy where it ran away instead of full on aggresion
+* For graphics we should use open source stuff for all the place holder stuff we have left over
+	* built in program that can take an image file to project onto the screen
+* Now that midterms are over we can really get to work on our coding and game design
+* good to have a good understanding of how management works and on how to respect what others are doing and how they are with their tasks
+* 
+
+Goals for next week (include responsibilities)
+* Add more priority in order of how to tackle the tasks and get them done in that order
+	*There is a priority option on trello to be able to add to each tasks so group members can know which tasks are highest priority
+* Any tasks that are more than 6-8 words long try to have sub-tasks for those to help with priority and organization
+* Add story points if able to
+* artwork will be assigned near the end as it is not high priority currently in terms of game engine usability
+* Take these 2-3 weeks as the most productive time for the project and really crack down on coding that needs to be done
+* 
