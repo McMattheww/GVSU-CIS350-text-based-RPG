@@ -12,11 +12,6 @@ class Room:
     def __init__(self, coordinates):
         self.XY = coordinates
 
-    #may pass a list of entities to begin in room
-    def __init__(self, coordinates, entity_list):
-        self.XY = coordinates
-        for entity in entity_list:
-            self.present_entities[entity.id] = entity
 
 
     # adds entity to a dictionary, using its id value to determine the key
