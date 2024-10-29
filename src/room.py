@@ -1,4 +1,3 @@
-
 class Room:
 
 
@@ -6,8 +5,6 @@ class Room:
     present_entities = {}  # entities present in room
 
 
-    def __init__(self):
-        pass
 
     def __init__(self, coordinates):
         self.XY = coordinates
@@ -21,4 +18,5 @@ class Room:
     # remove entity by id
     def rm(self, entityID):
         del self.present_entities[entityID]
+
 
