@@ -1,0 +1,39 @@
+Team name: Text Based RPG
+
+Members present: Nathan Lenters and Matthew Vansloot
+
+Date: Oct, 30, 2024
+
+Time: 2:30 pm
+
+Discussion points:
+* Code that was written and how it all interacts and works
+* Currently only has one test level and terminates once characters hit points reach 0
+* Rooms being randomly generated and not pre determined
+* game logic is already in a semi playable state with a set of rooms and coordinates
+* Estimated a week for UI and message log to be created
+* Talked about trying to keep it simple but overall if it works for us it is good
+* Collision in terms of same squares with the character and enemies and also enemies with enemies -> could possilby be restricted for now until more progress is made and more is figured out
+	* Use one guy per square and tougher enemies and attack adjacent squares
+* Keep tasks maximum of 6-8 hours per task and lower if possible
+* Current map set up is straight lines (corridors) to avoid having to deal with diagnol sight
+* Connecting git hub to pycharm to possibly make it easier to transfer code over to the git repository
+* Branches on git repository how to create them locally and push them to the git hub where they will reflect the changes directly on github
+* 
+
+Goals for next week (include responsibilities)
+* Get a UI created and working
+* Finish up current sprint with new logic that was added
+* Rendering of map squares and enemies
+* Figure out how to deal with multiple enemies in the same square
+* Figure out in pygame how to place text somewhere in a window
+* Define formulas to check all map squares in a certain radius of the player 
+* Revisit and fix Use Case Diagram extended description 
+	* Use case title/description along with other stuff
+* Move entites file to src folder instead of in artifacts folder
+* Complete HW 4 Part 1 by this friday
+* Go through project proposal document and make any changes if there are any to what was originally drafted
+* push all code
+* Do a high level code review
+* 
+
