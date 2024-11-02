@@ -30,10 +30,10 @@ def main():
         for event in pygame.event.get():
             if event.type == QUIT:
                 return
-
+        #
         keys = pygame.key.get_pressed()  # get keyboard input
         #
-        check_movement(screen, keys)
+        check_movement(screen, keys) # allows player movement
         #
         #
         #
@@ -71,16 +71,16 @@ def rendermap(sc):
 #checks user input for a movement command, then renders the map from the new position
 def check_movement(sc, keys):
     if keys[pygame.K_UP]:
-        w1.player_move("north")
-        rendermap(sc)
-    if keys[pygame.K_DOWN]:
         w1.player_move("south")
         rendermap(sc)
+    if keys[pygame.K_DOWN]:
+        w1.player_move("north")
+        rendermap(sc)
     if keys[pygame.K_LEFT]:
-        w1.player_move("east")
+        w1.player_move("west")
         rendermap(sc)
     if keys[pygame.K_RIGHT]:
-        w1.player_move("west")
+        w1.player_move("east")
         rendermap(sc)
 
 

@@ -12,31 +12,24 @@ class World:
     player = EN.Player()  #the player
 
 
-
-
     def __init__(self):
         self.worldgen1(6)
         self.worldgen2(6)
-        self.enemygen1()
+       #self.enemygen1()# generate enemies when ready
 
 
 
-
-    def game_loop(self):
-        # continues to run turns while player has health
-        while self.player.hitpoints > 0:
-            self.turn()
 
     def turn(self):
-        # one turn of gameplay
-        self.player_action()
+        # one turn of gameplay - should be run after a player action
         for enemy in self.enemyList:
             EN.check_encounter(self.player, enemy)
 
+
+### player actions ###
     def player_move(self, direction):
-        #TODO
-        #need to get input from keyboard/button press to determine which action to perform
         self.player.move(direction, self.rooms)
+        self.turn()
 
 
 
