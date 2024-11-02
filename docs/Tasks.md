@@ -1,6 +1,6 @@
  
 
-##Project Tasks 
+## Project Tasks 
 
  
 
@@ -206,4 +206,4 @@ Pending Tasks
 
  
 
-For the project chart, a Gantt chart can visually represent each task’s timeline.  
+For the project chart, a Gantt chart can visually represent each taskâ€™s timeline.  
