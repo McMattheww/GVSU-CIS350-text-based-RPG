@@ -13,8 +13,11 @@ class World:
 
 
 
+
     def __init__(self):
-        pass
+        self.worldgen1(6)
+        self.worldgen2(6)
+        self.enemygen1()
 
 
 
@@ -30,12 +33,10 @@ class World:
         for enemy in self.enemyList:
             EN.check_encounter(self.player, enemy)
 
-    def player_action(self):
+    def player_move(self, direction):
         #TODO
         #need to get input from keyboard/button press to determine which action to perform
-        self.player.move("north", self.rooms)
-
-
+        self.player.move(direction, self.rooms)
 
 
 

@@ -5,10 +5,8 @@ class Room:
     present_entities = {}  # entities present in room
 
 
-
     def __init__(self, coordinates):
         self.XY = coordinates
-
 
 
     # adds entity to a dictionary, using its id value to determine the key
