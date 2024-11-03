@@ -11,6 +11,8 @@ class World:
 
     player = EN.Player()  #the player
 
+    attackmode = False   # represents if the player is currently in attack mode
+
 
     def __init__(self):
         self.worldgen1(6)
@@ -31,9 +33,11 @@ class World:
         self.player.move(direction, self.rooms)
         self.turn()
 
-
-
-
+    def player_attack(self):
+        pass
+        #self.player.attack
+        #self.turn()
+### end player actions ###
 
     #generates rooms in straight line, in all 4 directions, from (0, 0)
     def worldgen1(self, size):
