@@ -15,9 +15,8 @@ class World:
 
 
     def __init__(self):
-        self.worldgen1(6)
-        self.worldgen2(6)
-       #self.enemygen1()# generate enemies when ready
+        self.worldgen2(3)
+        self.enemygen2()
 
 
 
@@ -25,10 +24,12 @@ class World:
     def turn(self):
         # one turn of gameplay - should be run after a player action
         for enemy in self.enemyList:
-            EN.check_encounter(self.player, enemy)
+            #EN.check_encounter(self.player, enemy)  #enemy actions need to be defined first
+            pass
 
 
 ### player actions ###
+
     def player_move(self, direction):
         self.player.move(direction, self.rooms)
         self.turn()
@@ -37,30 +38,15 @@ class World:
         pass
         #self.player.attack
         #self.turn()
+
+
 ### end player actions ###
 
-    #generates rooms in straight line, in all 4 directions, from (0, 0)
-    def worldgen1(self, size):
-        x=0
-        y=0
 
-        x=-size
-        while x <= size:
-            self.rooms[(x, y)] = room.Room((x, y))
-            x+=1
 
-        x = 0
-        y = -size
-        while y <= size:
-            self.rooms[(x, y)] = room.Room((x, y))
-            y+=1
-
-    # generates rooms in the outline of a square, creating a new layer each 3 rooms
+    # generates rooms
     def worldgen2(self, size):
-        x=0
-        y=0
-        interval=0
-
+        size *= 3
         x = -size
         while x <= size:
             interval = x % 3
@@ -85,8 +71,15 @@ class World:
 #randomly populate rooms with enemies, enemies will not spawn a certain distance form (0, 0)
     def enemygen1(self):
         for r in self.rooms.values():
-            if r.XY[0] < -2 or r.XY[0] > 2 and r.XY[1] < -2 or r.XY[1] > 2:
+            if r.XY[0] < -3 or r.XY[0] > 3 and r.XY[1] < -3 or r.XY[1] > 3:
                 #todo define random chance to add enemies in each room
+                self.enemyList.append(EN.Enemy(r.XY))
+
+    def enemygen2(self):
+        for r in self.rooms.values():
+            if r.XY[0] == -2 or r.XY[0] == 2 or r.XY[1] == -2:
+                self.enemyList.append(EN.Enemy(r.XY))
+            if r.XY[0] == -2:
                 self.enemyList.append(EN.Enemy(r.XY))
 
 

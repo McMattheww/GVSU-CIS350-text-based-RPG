@@ -55,21 +55,54 @@ def escape_attack_mode(keys, w1):  # press space to enter attack targeting mode
 
 # matthew's function - working on rendering map squares around player each frame, and player himself
 def rendermap(sc, w1):
+
+    #render map squares
     pygame.draw.rect(sc, (0, 0, 0), (560, 0, 720, 720))  # black background for rooms
     distance = [0, 0]
-    for room in w1.rooms:  # w1 should be replaced with an instance of the world class
+    for room in w1.rooms:
         distance[0] = room[0] - w1.player.coordinates[0] + 11
         distance[1] = room[1] - w1.player.coordinates[1] + 4
 
         # render rectangles based of coordinates, only within 4 squares of player, on right side of screen
         if 16 > distance[0] > 6 and -1 < distance[1] < 9:
             pygame.draw.rect(sc, (200, 200, 200), (distance[0] * 80, distance[1] * 80, 80, 80))
+
+
+    #render player
     pygame.draw.circle(sc, (0, 200, 0), (920, 360), 10)
 
 
+    #rendering enemies
+    enemiesPerRoom = {}    # track the amount of enemies in the same room
+    for enemy in w1.enemyList:
+        if enemy.coordinates not in enemiesPerRoom:
+            enemiesPerRoom[enemy.coordinates] = 1
+        else:
+            enemiesPerRoom[enemy.coordinates] += 1
+
+        distance[0] = (enemy.coordinates[0] - w1.player.coordinates[0]) + 11
+        distance[1] = (enemy.coordinates[1] - w1.player.coordinates[1]) + 4
+        offset = determineOffset(enemiesPerRoom[enemy.coordinates])
+
+        if 16 > distance[0] > 6 and -1 < distance[1] < 9:
+            pygame.draw.circle(sc, (200, 0, 0), ((distance[0] * 80) + offset[0], (distance[1] * 80) + offset[1]), 5)
 
 
 
+
+
+#determines how to draw enemy sprites based on how many enemies are in the same room
+def determineOffset(enemyCounter):
+    offset = (40, 40)
+    if enemyCounter == 1:
+        offset = (20, 20)
+    elif enemyCounter == 2:
+        offset = (60, 20)
+    elif enemyCounter == 3:
+        offset = (20, 60)
+    elif enemyCounter == 4:
+        offset = (60, 60)
+    return offset
 
 
 
