@@ -1,9 +1,26 @@
 # Attack - player character
 
-The attack function of the player character is dependent on a couple of factors.
- The main factor is the weapon the player has equipped.
- If no weapon is equipped the player is automatically given a weak "unarmed" weapon.
- All weapons have durabilty that lowers with use, when it gets to a certain level weapon performance is worsened.
- Ranged weapons require ammunition to attack.
- weapons have a different attack types, mellee weapons have different levels of atack ferocity that use more/less stamina, ranged weapons have fire modes that trade rate of fire for accuracy.
+Use Case:	Attack Enemy
+
+
+Actors:		Player, Enemy
+
+
+
+Description
+	1. The Player enters target selection mode
+	2. The player selects an enemy within attack range 
+	3. Calculations comparing values of the player and enemy determine a damage amount
+	4. The damage amount is applied to the enemy
+	5. The player's turn is ended
+
+
+
+Cross Ref:  Requirment:"user shall be able to attack enemy"
+
+
+
+Use-Cases: 	It must be the player's turn, and there must be an enemy within attack range of the player 
+
+
 
