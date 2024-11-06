@@ -1,8 +1,5 @@
- 
 
-## Project Tasks 
-
- 
+Completed Tasks 
 
 1. Game World Setup   
 
@@ -10,9 +7,9 @@
 
    - Expected time to complete: 6 hours   
 
-   - Responsible: [Matthew]   
+   - Responsible: [Matthew]
 
- 
+    
 
 2. Player Character Initialization   
 
@@ -22,17 +19,38 @@
 
    - Responsible: [Nate]   
 
- 
 
+ 
 3. Enemy Object Creation   
 
    - Description: Implement enemy objects with basic stats and room placement.   
 
    - Expected time to complete: 4 hours   
 
+   - Responsible: [Nate]
+  
+
+
+ 7. Player Movement   
+
+   - Description: Allow player character movement to adjacent rooms.   
+
+   - Expected time to complete: 4 hours   
+
    - Responsible: [Nate]   
 
+  
+
+18. Ideation 
+
+   - Description: Planning type of game to make and tech to use.   
+
+   - Expected time to complete: 6 hours 
+
+   - Responsible: [Matthew & Nate]   
+
  
+Pending Tasks 
 
 4. Item Object Creation   
 
@@ -60,21 +78,10 @@
 
    - Expected time to complete: 5 hours   
 
-   - Responsible: [Matthew]   
+   - Responsible: [Matthew]
+  
 
- 
-
-7. Player Movement   
-
-   - Description: Allow player character movement to adjacent rooms.   
-
-   - Expected time to complete: 4 hours   
-
-   - Responsible: [Nate]   
-
- 
-
-8. Enemy AI - Alert Mechanic   
+ 8. Enemy AI - Alert Mechanic   
 
    - Description: Implement enemy alert based on sound or line of sight.   
 
@@ -171,34 +178,6 @@
    - Expected time to complete: 10 hours   
 
    - Responsible: [Matthew & Nate]   
-
- 
-
-18. Ideation 
-
-   - Description: Planning type of game to make and tech to use.   
-
-   - Expected time to complete: 6 hours 
-
-   - Responsible: [Matthew & Nate]   
-
- 
-
- 
-
---- 
-
- 
-
-Completed Tasks 
-
-- [List any tasks completed so far if applicable] 
-
- 
-
-Pending Tasks 
-
-- [List remaining tasks based on the above breakdown] 
 
  
 
