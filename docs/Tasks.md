@@ -177,7 +177,37 @@
 
    - Expected time to complete: 10 hours   
 
-   - Responsible: [Matthew & Nate]   
+   - Responsible: [Matthew & Nate]
+
+
+
+18. Graphics - Map  
+
+ - Description: Render the map squares and enemies around the player.   
+
+  - Expected time to complete: 8 hours   
+
+ - Responsible: [Matthew]
+
+
+
+19. Graphics - Battle Messages   
+
+ - Description: Display a log of combat events to the player.   
+
+  - Expected time to complete: 4 hours   
+
+ - Responsible: [Nate]
+
+
+
+20. Target selection  
+
+ - Description: Allow player to select which enemy in range they want to attack.   
+
+  - Expected time to complete: 3 hours   
+
+ - Responsible: [Matthew]
 
  
 
