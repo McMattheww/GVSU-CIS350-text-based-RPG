@@ -3,31 +3,31 @@ Completed Tasks
 
 1. Game World Setup   
 
-   - Description: Implement the game map with interconnected rooms, including coordinates.   
+ - Description: Implement the game map with interconnected rooms, including coordinates.   
 
-   - Expected time to complete: 6 hours   
+  - Expected time to complete: 6 hours   
 
-   - Responsible: [Matthew]
+ - Responsible: [Matthew]
 
     
 
 2. Player Character Initialization   
 
-   - Description: Create the player character with starting stats and initial room placement.   
+- Description: Create the player character with starting stats and initial room placement.   
 
-   - Expected time to complete: 3 hours   
+- Expected time to complete: 3 hours   
 
-   - Responsible: [Nate]   
+- Responsible: [Nate]   
 
 
  
 3. Enemy Object Creation   
 
-   - Description: Implement enemy objects with basic stats and room placement.   
+- Description: Implement enemy objects with basic stats and room placement.   
 
-   - Expected time to complete: 4 hours   
+- Expected time to complete: 4 hours   
 
-   - Responsible: [Nate]
+- Responsible: [Nate]
   
 
 
@@ -54,31 +54,31 @@ Pending Tasks
 
 4. Item Object Creation   
 
-   - Description: Implement item objects, including placement in rooms.   
+- Description: Implement item objects, including placement in rooms.   
 
-   - Expected time to complete: 3 hours   
+- Expected time to complete: 3 hours   
 
-   - Responsible: [Nate]   
+- Responsible: [Nate]   
 
  
 
 5. Line of Sight Mechanic   
 
-   - Description: Set up line of sight between rooms based on coordinates.   
+- Description: Set up line of sight between rooms based on coordinates.   
 
-   - Expected time to complete: 5 hours   
+- Expected time to complete: 5 hours   
 
-   - Responsible: [Matthew]   
+- Responsible: [Matthew]   
 
  
 
 6. Sound Event Mechanic   
 
-   - Description: Implement sound propagation to adjacent rooms.   
+- Description: Implement sound propagation to adjacent rooms.   
 
-   - Expected time to complete: 5 hours   
+- Expected time to complete: 5 hours   
 
-   - Responsible: [Matthew]
+- Responsible: [Matthew]
   
 
  8. Enemy AI - Alert Mechanic   
@@ -93,11 +93,11 @@ Pending Tasks
 
 9. Enemy AI - Pursuit Mechanic   
 
-   - Description: Program enemies to pursue player character when alerted.   
+- Description: Program enemies to pursue player character when alerted.   
 
-   - Expected time to complete: 6 hours   
+- Expected time to complete: 6 hours   
 
-   - Responsible: [Nate]   
+- Responsible: [Nate]   
 
  
 
