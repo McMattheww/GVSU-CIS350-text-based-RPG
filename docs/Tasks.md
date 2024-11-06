@@ -1,5 +1,5 @@
 
-Completed Tasks 
+## Completed Tasks 
 
 1. Game World Setup   
 
@@ -50,7 +50,7 @@ Completed Tasks
    - Responsible: [Matthew & Nate]   
 
  
-Pending Tasks 
+## Pending Tasks 
 
 4. Item Object Creation   
 
