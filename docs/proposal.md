@@ -4,22 +4,18 @@ Team members: Matthew VanSlooten, Nathan Lenters.
 
 # Introduction
 
-We are creating a text based RPG game, we may use some limited graphics or ASCII art, for a title screen for example.
+We are creating a post-apocalyptic, turn-based RPG game, using a square grid for the map.
+
 The main feature of the game is you have a player character with certain statistics, health points, hunger level, inventory, etc. 
 As you engage in combat with enemies or deal with environemtal hazards, these statistics are affected. 
-Where the player is in the game world will be tracked on a room-by-room basis, like the different rooms of a dungeon. When in one of these rooms 
-the player can interact with all the same monsters, items, traps, etc. in that room, or they can also move to an adjacent room.
-All the room objects the player can travel to could be held in a dictionary, with a key value representing (x, y) coordinates that tracks the location of each room, 
-making sure you can only travel to adjacent rooms, and easily changing the players current coordinates by incrementing the (x, y) value based on direction traveled. 
 
-Once we have the player character, rooms, and the ability to travel between rooms, we then need to populate those rooms with interesting things. 
-Items to collect or inspect, enemies to fight, traps to avoid, possibly some story elements or puzzles to solve.
+the player can interact with all the same monsters, items, traps, etc. in that room, or they can also move to an adjacent rooms in the grid.
 
 Alot of the work could come from developing the combat system and enemies in an interesting way.
  It could be useful to look at the combat systems for other RPG games and see how they are implemented
 
 Features
-Character moves through rooms representing game world
+Character moves through map grid representing game world
 combat system for fighting enemies that also populate game world
 environmental factors, items in rooms to pick up, traps, low light level, slippery floor, etc. to makes rooms more interesting
 Player character has statistics and items, possibly weapons and armor too, they use to help overcome challenges
@@ -32,7 +28,7 @@ Python, with external library PyGame for game features, and PyInstaller to packa
 
 Github to host repo
 
-Jira to host scrum board, track issues, plan sprints.
+Trello to host scrum board, track issues, plan sprints.
 
 # Method/Approach
 
