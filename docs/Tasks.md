@@ -10,7 +10,7 @@
 
    - Expected time to complete: 6 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew]   
 
  
 
@@ -20,7 +20,7 @@
 
    - Expected time to complete: 3 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -30,7 +30,7 @@
 
    - Expected time to complete: 4 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -40,7 +40,7 @@
 
    - Expected time to complete: 3 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -50,7 +50,7 @@
 
    - Expected time to complete: 5 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew]   
 
  
 
@@ -60,7 +60,7 @@
 
    - Expected time to complete: 5 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew]   
 
  
 
@@ -70,7 +70,7 @@
 
    - Expected time to complete: 4 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -80,7 +80,7 @@
 
    - Expected time to complete: 5 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -90,7 +90,7 @@
 
    - Expected time to complete: 6 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -100,7 +100,7 @@
 
    - Expected time to complete: 8 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew]   
 
  
 
@@ -110,7 +110,7 @@
 
    - Expected time to complete: 7 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew]   
 
  
 
@@ -120,7 +120,7 @@
 
    - Expected time to complete: 6 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -130,7 +130,7 @@
 
    - Expected time to complete: 5 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -150,7 +150,7 @@
 
    - Expected time to complete: 3 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Nate]   
 
  
 
@@ -160,7 +160,7 @@
 
    - Expected time to complete: 3 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew & Nate]   
 
  
 
@@ -170,7 +170,7 @@
 
    - Expected time to complete: 10 hours   
 
-   - Responsible: [Team Member Name]   
+   - Responsible: [Matthew & Nate]   
 
  
 
@@ -180,7 +180,7 @@
 
    - Expected time to complete: 6 hours 
 
-   - Responsible: [Matthew & Nathan]   
+   - Responsible: [Matthew & Nate]   
 
  
 
