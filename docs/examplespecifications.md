@@ -1,10 +1,10 @@
-#Requirements - WIP -
+# Requirements - WIP -
 
 
-##Functional:
+## Functional:
 
 
-####Game World:
+#### Game World:
 
 - A map shall be populated with interconnected rooms each with a unique (x, y) coordinate value
 
@@ -21,7 +21,7 @@ room to the next shall count as "in line of sight" of each other
 
 - Sound event should propagate a specified range amount to other adjacent rooms, ignoring if the rooms have line of sight
 
-####Movement:
+#### Movement:
 
 - User shall be able to move player character to rooms with adjacent (x, y) coordinates
 
@@ -33,7 +33,7 @@ room to the next shall count as "in line of sight" of each other
 
 - Movement shall be turn based, the player character moves once, then all alerted enemies move once
 
-####Combat
+#### Combat
 
 - Enemy Objects should have "HP" statistic representing health
 
@@ -62,7 +62,7 @@ room to the next shall count as "in line of sight" of each other
 - After an equipped weapon is destroyed, the player shall be left with wit an "empty" weapon equipped, representing no weapon
 
 
-####Items
+#### Items
 
 - "Inventory" list should track items the player character is carrying
 
@@ -75,7 +75,7 @@ room to the next shall count as "in line of sight" of each other
 - User shall be able to "pick up" items when they are in the same room as the player character, removing them from the room and adding them to the inventory
 
 
-##Non-Functional:
+## Non-Functional:
 
 - User shall be presented with a main menu on execution of program
 
