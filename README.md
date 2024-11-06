@@ -11,8 +11,8 @@ Where the player is in the game world will be tracked on a room-by-room basis, l
 
 ## Prerequisites
 
-TBD
+None
 
 ## Run Instructions
 
-TBD
+Download executable for your system (Windows, Mac, Linux) and run
