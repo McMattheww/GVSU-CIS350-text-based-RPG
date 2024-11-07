@@ -201,11 +201,29 @@
 
 
 
-20. Target selection  
+20. Target Selection  
 
  - Description: Allow player to select which enemy in range they want to attack.   
 
   - Expected time to complete: 3 hours   
+
+ - Responsible: [Matthew]
+
+
+21. Use Case Diagram
+
+ - Description: Show the ways the user interacts with the system.   
+
+  - Expected time to complete: 6 hours   
+
+ - Responsible: [Nate]
+
+
+22. Initial Proposal 
+
+ - Description: Give overview of project and features.   
+
+  - Expected time to complete: 6 hours   
 
  - Responsible: [Matthew]
 
