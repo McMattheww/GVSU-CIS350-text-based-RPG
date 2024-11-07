@@ -47,7 +47,25 @@
 
    - Expected time to complete: 6 hours 
 
-   - Responsible: [Matthew & Nate]   
+   - Responsible: [Matthew & Nate]
+
+
+21. Use Case Diagram
+
+ - Description: Show the ways the user interacts with the system.   
+
+  - Expected time to complete: 6 hours   
+
+ - Responsible: [Nate]
+
+
+22. Initial Proposal 
+
+ - Description: Give overview of project and features.   
+
+  - Expected time to complete: 6 hours   
+
+ - Responsible: [Matthew]
 
  
 ## Pending Tasks 
@@ -210,25 +228,7 @@
  - Responsible: [Matthew]
 
 
-21. Use Case Diagram
-
- - Description: Show the ways the user interacts with the system.   
-
-  - Expected time to complete: 6 hours   
-
- - Responsible: [Nate]
-
-
-22. Initial Proposal 
-
- - Description: Give overview of project and features.   
-
-  - Expected time to complete: 6 hours   
-
- - Responsible: [Matthew]
-
  
-
 --- 
 
  
