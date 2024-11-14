@@ -29,16 +29,36 @@ def check_movement(sc, keys, w1):
         time.sleep(0.1)
 
 
+#check if user presses space to enter attack mode
 def enter_attack_mode(keys, w1):
     if keys[pygame.K_SPACE]:
         w1.attackmode = True
+        for enemy in w1.enemyList:
+            pass
+            #TODO: add enemies to w1 enemyInRange list if they are in range of player's attack
 
-
-
+#check if user presses escape to exit attack mode
 def escape_attack_mode(keys, w1):  # press space to enter attack targeting mode
-
     if keys[pygame.K_ESCAPE]:  # escape key to cancel tageting mode
         w1.attackmode = False
+
+        #check if the user presses an arrow key in attack mode, changing target selection
+def check_attack_selection(sc, keys, w1):
+    #TODO: arrows keys should cycle through the enemies in enemyInRange list, setting one to be actively selecvted as target
+    if keys[pygame.K_UP]:
+        pass
+    if keys[pygame.K_DOWN]:
+        pass
+    if keys[pygame.K_LEFT]:
+        pass
+    if keys[pygame.K_RIGHT]:
+        pass
+
+#checks for user presses space while in attack mode, confirming their current target selection
+def confirm_attack_selection(sc, keys, w1):
+    if keys[pygame.K_SPACE]:
+        pass
+        #TODO: send command for the player to perform atack action on the currently selected enemy
 
 
 
@@ -56,8 +76,10 @@ def escape_attack_mode(keys, w1):  # press space to enter attack targeting mode
 # matthew's function - working on rendering map squares around player each frame, and player himself
 def rendermap(sc, w1):
 
-    #render map squares
     pygame.draw.rect(sc, (0, 0, 0), (560, 0, 720, 720))  # black background for rooms
+
+
+    # render map squares ##TODO: instead of drawing square, draw square sprite with a grid on the edge
     distance = [0, 0]
     for room in w1.rooms:
         distance[0] = room[0] - w1.player.coordinates[0] + 11
@@ -69,7 +91,7 @@ def rendermap(sc, w1):
 
 
     #render player
-    pygame.draw.circle(sc, (0, 200, 0), (920, 360), 10)
+    pygame.draw.circle(sc, (0, 200, 0), (920, 360), 6)
 
 
     #rendering enemies
@@ -91,17 +113,19 @@ def rendermap(sc, w1):
 
 
 
+
+
 #determines how to draw enemy sprites based on how many enemies are in the same room
 def determineOffset(enemyCounter):
     offset = (40, 40)
     if enemyCounter == 1:
-        offset = (20, 20)
+        offset = (25, 25)
     elif enemyCounter == 2:
-        offset = (60, 20)
+        offset = (55, 25)
     elif enemyCounter == 3:
-        offset = (20, 60)
+        offset = (25, 55)
     elif enemyCounter == 4:
-        offset = (60, 60)
+        offset = (55, 55)
     return offset
 
 

@@ -9,6 +9,8 @@ class World:
 
     enemyList = []  #list of all enemies in current map, to be cycled through every turn to act.
 
+    enemyInRange = [] #list of enemies in the current map that are in range of the player's attack
+
     player = EN.Player()  #the player
 
     attackmode = False   # represents if the player is currently in attack mode
