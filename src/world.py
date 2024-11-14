@@ -5,7 +5,10 @@ import Entities as EN
 class World:
 
 
-    rooms = {}  #list of all rooms in current map, XY coordinates are keys, room objects are values
+    rooms = {}  #dictionary of all rooms in current map, XY coordinates are keys, room objects are values
+
+    roomLOS = {} #dictionary tracking which rooms in the map are in line of sight of eachother,
+                 #key is room XY coordinates, value is set of XY coordinates of rooms that are in LOS of that room
 
     enemyList = []  #list of all enemies in current map, to be cycled through every turn to act.
 
@@ -19,6 +22,7 @@ class World:
     def __init__(self):
         self.worldgen2(3)
         self.enemygen2()
+        self.LOSgen()
 
 
 
@@ -83,6 +87,61 @@ class World:
                 self.enemyList.append(EN.Enemy(r.XY))
             if r.XY[0] == -2:
                 self.enemyList.append(EN.Enemy(r.XY))
+
+
+
+
+
+#TODO: add line of sight for diagonal rooms, currently its limited to a horizontal and vertical line of rooms from the current room
+    def LOSgen(self):
+        for room in self.rooms:
+            self.roomLOS[room] = set((room)) #ensures that each room itself is always included in the roomLOS value sets
+
+            x = self.rooms[room].XY[0]
+            y = self.rooms[room].XY[1]
+            x += 1
+            while (x, y) in self.rooms:
+                self.roomLOS[room].add((x, y))
+                x += 1
+
+            x = self.rooms[room].XY[0]
+            y = self.rooms[room].XY[1]
+            x -= 1
+            while (x, y) in self.rooms:
+                self.roomLOS[room].add((x, y))
+                x -= 1
+
+            x = self.rooms[room].XY[0]
+            y = self.rooms[room].XY[1]
+            y += 1
+            while (x, y) in self.rooms:
+                self.roomLOS[room].add((x, y))
+                y += 1
+
+            x = self.rooms[room].XY[0]
+            y = self.rooms[room].XY[1]
+            y -= 1
+            while (x, y) in self.rooms:
+                self.roomLOS[room].add((x, y))
+                y -= 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -15,6 +15,7 @@ def check_movement(sc, keys, w1):
         w1.player_move("south")
         rendermap(sc, w1)
         time.sleep(0.1)
+        print(w1.roomLOS[w1.player.coordinates])
     if keys[pygame.K_DOWN]:
         w1.player_move("north")
         rendermap(sc, w1)
