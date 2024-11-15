@@ -1,4 +1,5 @@
 class Player:
+    attack_range = 3 # should change based on equipped weapon
     def __init__(self, name="", coordinates=(0, 0), hitpoints=100, max_hitpoints=100):
         self.name = name
         self.coordinates = coordinates

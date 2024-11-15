@@ -44,15 +44,15 @@ def main():
         ##
         #
         if w1.attackmode:
-            c.escape_attack_mode(keys, w1)
+            c.escape_attack_mode(screen, keys, w1)
             #
-            c.check_attack_selection(sc, keys, w1)
+            c.check_attack_selection(screen, keys, w1)
             #
-            c.confirm_attack_selection(sc, keys, w1)
+            c.confirm_attack_selection(screen, keys, w1)
         else:
             c.check_movement(screen, keys, w1)  # check user input to move
             #
-            c.enter_attack_mode(keys, w1)  # checks input for entering attack mode
+            c.enter_attack_mode(screen, keys, w1)  # checks input for entering attack mode
         #
         #
         #

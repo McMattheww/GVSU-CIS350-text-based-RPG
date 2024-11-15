@@ -11,7 +11,7 @@ class Room:
 
     # adds entity to a dictionary, using its id value to determine the key
     def add(self, entity):
-        self.present_entities[entity.id] = entity
+        self.present_entities[id(entity)] = entity
 
     # remove entity by id
     def rm(self, entityID):

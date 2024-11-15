@@ -12,11 +12,14 @@ class World:
 
     enemyList = []  #list of all enemies in current map, to be cycled through every turn to act.
 
-    enemyInRange = [] #list of enemies in the current map that are in range of the player's attack
+    enemyInRange = [] #list of enemies in the current map that are in range, of the player's attack
 
     player = EN.Player()  #the player
 
     attackmode = False   # represents if the player is currently in attack mode
+
+    selectedEnemy = ''  # object ID of currently selected attack target
+    selectedEnemyIndex = ''
 
 
     def __init__(self):
@@ -40,7 +43,7 @@ class World:
         self.player.move(direction, self.rooms)
         self.turn()
 
-    def player_attack(self):
+    def player_attack(self, targetID):
         pass
         #self.player.attack
         #self.turn()

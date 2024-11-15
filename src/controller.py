@@ -31,35 +31,69 @@ def check_movement(sc, keys, w1):
 
 
 #check if user presses space to enter attack mode
-def enter_attack_mode(keys, w1):
+def enter_attack_mode(sc, keys, w1):
     if keys[pygame.K_SPACE]:
         w1.attackmode = True
         for enemy in w1.enemyList:
-            pass
-            #TODO: add enemies to w1 enemyInRange list if they are in range of player's attack
+            xDiff = abs(enemy.coordinates[0] - w1.player.coordinates[0])
+            yDiff = abs(enemy.coordinates[1] - w1.player.coordinates[1])
+            distance = xDiff + yDiff
+            if w1.player.attack_range >= distance and enemy.coordinates in w1.roomLOS[w1.player.coordinates]:
+                w1.enemyInRange.append(enemy)
+        w1.selectedEnemyIndex = 0
+        if len(w1.enemyInRange) > 0:
+            w1.selectedEnemy = id(w1.enemyInRange[0])
+        rendermap(sc, w1)
+
+
+
+
+
+
 
 #check if user presses escape to exit attack mode
-def escape_attack_mode(keys, w1):  # press space to enter attack targeting mode
+def escape_attack_mode(sc, keys, w1):  # press space to enter attack targeting mode
     if keys[pygame.K_ESCAPE]:  # escape key to cancel tageting mode
+        w1.enemyInRange.clear()
         w1.attackmode = False
+        w1.selectedEnemy = ''
+        rendermap(sc, w1)
 
         #check if the user presses an arrow key in attack mode, changing target selection
 def check_attack_selection(sc, keys, w1):
     #TODO: arrows keys should cycle through the enemies in enemyInRange list, setting one to be actively selecvted as target
     if keys[pygame.K_UP]:
-        pass
+        rendermap(sc, w1)
     if keys[pygame.K_DOWN]:
-        pass
+        rendermap(sc, w1)
     if keys[pygame.K_LEFT]:
-        pass
+        if len(w1.enemyInRange) > 0:
+            w1.selectedEnemyIndex -= 1
+        if w1.selectedEnemyIndex == -1:
+            w1.selectedEnemyIndex = len(w1.enemyInRange) - 1
+        w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
+        rendermap(sc, w1)
+        time.sleep(0.1)
     if keys[pygame.K_RIGHT]:
-        pass
+        if len(w1.enemyInRange) > 0:
+            w1.selectedEnemyIndex += 1
+        if w1.selectedEnemyIndex == len(w1.enemyInRange):
+            w1.selectedEnemyIndex = 0
+        w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
+        rendermap(sc, w1)
+        time.sleep(0.1)
 
-#checks for user presses space while in attack mode, confirming their current target selection
+
+#checks for user presses CTRL while in attack mode, confirming their current target selection
 def confirm_attack_selection(sc, keys, w1):
-    if keys[pygame.K_SPACE]:
-        pass
-        #TODO: send command for the player to perform atack action on the currently selected enemy
+    if keys[pygame.K_LCTRL] or keys[pygame.K_RCTRL]:
+        if len(w1.enemyInRange) > 0:
+            w1.player_attack(w1.selectedEnemy)
+
+            w1.enemyInRange.clear()
+            w1.attackmode = False
+            w1.selectedEnemy = ''
+            rendermap(sc, w1)
 
 
 
@@ -108,7 +142,10 @@ def rendermap(sc, w1):
         offset = determineOffset(enemiesPerRoom[enemy.coordinates])
 
         if 16 > distance[0] > 6 and -1 < distance[1] < 9:
-            pygame.draw.circle(sc, (200, 0, 0), ((distance[0] * 80) + offset[0], (distance[1] * 80) + offset[1]), 5)
+            if id(enemy) == w1.selectedEnemy:
+                pygame.draw.circle(sc, (100, 170, 170), ((distance[0] * 80) + offset[0], (distance[1] * 80) + offset[1]), 5)
+            else:
+                pygame.draw.circle(sc, (200, 0, 0), ((distance[0] * 80) + offset[0], (distance[1] * 80) + offset[1]), 5)
 
 
 
