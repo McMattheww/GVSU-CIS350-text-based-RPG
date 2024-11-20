@@ -7,8 +7,21 @@ Date: Nov, 20, 2024
 Time: 2:30 pm
 
 Discussion points:
+* Grading was updated for the peer review feedback
+* Demonstration of mockup with dungeon tiles new artwork and image file so it isnt just a black box but now has some dungeon tile
+* Talked about how to actually get the image into our game and properly show what we want it to show
+* Confirmed that player and enemies could all move and attack and confirm the attack
+* Attack patterns are only horizontile or verticle and not diagonal - if there is a wall there is no need for the attack to ever be diagonal
+* Only on type of enemy currently that have all the stats passed into the class but perhaps pass in the enemy type like orc or goblin to change the stats for each enemy type
+* maybe have bigger size for each level that an enemy has
+* messages get replaced and move up for each message seen and have a max of 10 or fewer
+* sound effects can be included later for now focus on visuals like a slash going through the enemy
 * 
 
 Goals for next week (include responsibilities)
+* Touch up actions the enemy will do each time the player moves when they are all cycled through
+* have 15 functional and 15 non functional requirements still need to be added to the github
+* add potions and different weapons that you can switch too through out the game
+* functional reuirements could be the player moves attacks and stuff like that
 * 
 
