@@ -41,6 +41,22 @@ def main():
         #
         ##
         #render text or objects here to be drawn each frame
+        # Initialize messages
+        messages = ["Welcome to the game!"]
+
+        # Inside the game loop
+        if w1.attackmode:
+            c.escape_attack_mode(screen, keys, w1)
+            c.check_attack_selection(screen, keys, w1)
+            c.confirm_attack_selection(screen, keys, w1)
+        else:
+            c.check_movement(screen, keys, w1)
+            c.enter_attack_mode(screen, keys, w1)
+
+        # Render game information
+        c.render_message_log(screen, messages)
+        c.render_status_bars(screen, w1.player)
+
         ##
         #
         if w1.attackmode:
@@ -71,6 +87,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 

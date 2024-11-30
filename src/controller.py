@@ -5,10 +5,6 @@ from pygame.locals import *
 ## misc. functions for use in main.py
 
 
-
-
-
-
 # checks user input for arrow key input, performs movement, then renders new map position
 def check_movement(sc, keys, w1):
     if keys[pygame.K_UP]:
@@ -44,12 +40,6 @@ def enter_attack_mode(sc, keys, w1):
         if len(w1.enemyInRange) > 0:
             w1.selectedEnemy = id(w1.enemyInRange[0])
         rendermap(sc, w1)
-
-
-
-
-
-
 
 #check if user presses escape to exit attack mode
 def escape_attack_mode(sc, keys, w1):  # press space to enter attack targeting mode
@@ -96,15 +86,35 @@ def confirm_attack_selection(sc, keys, w1):
             rendermap(sc, w1)
 
 
+# Render message log
+def render_message_log(sc, messages, x=10, y=10, width=500, height=200, line_height=20, font_size=16):
+    pygame.draw.rect(sc, (0, 0, 0), (x, y, width, height))  # Background for the log
+    pygame.draw.rect(sc, (255, 255, 255), (x, y, width, height), 2)  # Border for the log
 
+    font = pygame.font.Font(None, font_size)
+    for i, message in enumerate(messages[-(height // line_height):]):  # Display last messages
+        text = font.render(message, True, (255, 255, 255))
+        sc.blit(text, (x + 5, y + i * line_height))
 
+# Render character name and status bars
+def render_status_bars(sc, player, x=10, y=220, width=500, bar_height=20, font_size=16):
+    pygame.draw.rect(sc, (0, 0, 0), (x, y, width, 100))  # Background for the status section
+    pygame.draw.rect(sc, (255, 255, 255), (x, y, width, 100), 2)  # Border for the section
 
+    font = pygame.font.Font(None, font_size)
+    name_text = font.render(f"Name: {player.name}", True, (255, 255, 255))
+    sc.blit(name_text, (x + 10, y + 10))
 
+    # Render health bar
+    pygame.draw.rect(sc, (255, 0, 0), (x + 10, y + 40, width - 20, bar_height))
+    pygame.draw.rect(sc, (0, 255, 0), (x + 10, y + 40, (width - 20) * (player.hitpoints / player.max_hitpoints), bar_height))
 
+    hp_text = font.render(f"HP: {player.hitpoints}/{player.max_hitpoints}", True, (255, 255, 255))
+    sc.blit(hp_text, (x + 10, y + 40 + bar_height + 5))
 
-
-
-
+    # Render attack range
+    range_text = font.render(f"Attack Range: {player.attack_range}", True, (255, 255, 255))
+    sc.blit(range_text, (x + 10, y + 70))
 
 
 
@@ -147,12 +157,6 @@ def rendermap(sc, w1):
             else:
                 pygame.draw.circle(sc, (200, 0, 0), ((distance[0] * 80) + offset[0], (distance[1] * 80) + offset[1]), 5)
 
-
-
-
-
-
-
 #determines how to draw enemy sprites based on how many enemies are in the same room
 def determineOffset(enemyCounter):
     offset = (40, 40)
@@ -165,13 +169,5 @@ def determineOffset(enemyCounter):
     elif enemyCounter == 4:
         offset = (55, 55)
     return offset
-
-
-
-
-
-
-
-
 
 
