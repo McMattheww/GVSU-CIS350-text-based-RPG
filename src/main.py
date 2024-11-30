@@ -18,6 +18,8 @@ def main():
     background = background.convert()
     background.fill((60, 60, 60))
 
+    messages = []
+
 
     screen.blit(background, (0, 0))   #draw the background
     c.rendermap(screen, w1)  # renders map, using 720x720 screen space on the right side
@@ -41,17 +43,16 @@ def main():
         #
         ##
         #render text or objects here to be drawn each frame
-        # Initialize messages
-        messages = ["Welcome to the game!"]
 
-        # Inside the game loop
+        #Currently breaks game
+        """# Inside the game loop
         if w1.attackmode:
             c.escape_attack_mode(screen, keys, w1)
             c.check_attack_selection(screen, keys, w1)
             c.confirm_attack_selection(screen, keys, w1)
         else:
             c.check_movement(screen, keys, w1)
-            c.enter_attack_mode(screen, keys, w1)
+            c.enter_attack_mode(screen, keys, w1)"""
 
         # Render game information
         c.render_message_log(screen, messages)
@@ -66,9 +67,10 @@ def main():
             #
             c.confirm_attack_selection(screen, keys, w1)
         else:
-            c.check_movement(screen, keys, w1)  # check user input to move
+            c.check_movement(screen, keys, w1, messages)  # check user input to move
             #
             c.enter_attack_mode(screen, keys, w1)  # checks input for entering attack mode
+
         #
         #
         #
@@ -78,12 +80,6 @@ def main():
     #################### END OF GAME LOOP #############################
     #################################################################
     #nothing beyond here will run 'till the game quits
-
-
-
-
-
-
 
 if __name__ == '__main__':
     main()

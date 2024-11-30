@@ -6,22 +6,26 @@ from pygame.locals import *
 
 
 # checks user input for arrow key input, performs movement, then renders new map position
-def check_movement(sc, keys, w1):
+def check_movement(sc, keys, w1, messages):
     if keys[pygame.K_UP]:
         w1.player_move("south")
+        messages.append("Player moved south")
         rendermap(sc, w1)
         time.sleep(0.1)
         print(w1.roomLOS[w1.player.coordinates])
     if keys[pygame.K_DOWN]:
         w1.player_move("north")
+        messages.append("Player moved north")
         rendermap(sc, w1)
         time.sleep(0.1)
     if keys[pygame.K_LEFT]:
         w1.player_move("west")
+        messages.append("Player moved west")
         rendermap(sc, w1)
         time.sleep(0.1)
     if keys[pygame.K_RIGHT]:
         w1.player_move("east")
+        messages.append("Player moved east")
         rendermap(sc, w1)
         time.sleep(0.1)
 
@@ -94,7 +98,7 @@ def render_message_log(sc, messages, x=10, y=10, width=500, height=200, line_hei
     font = pygame.font.Font(None, font_size)
     for i, message in enumerate(messages[-(height // line_height):]):  # Display last messages
         text = font.render(message, True, (255, 255, 255))
-        sc.blit(text, (x + 5, y + i * line_height))
+        sc.blit(text, (x + 5, y + i * line_height + 5))
 
 # Render character name and status bars
 def render_status_bars(sc, player, x=10, y=220, width=500, bar_height=20, font_size=16):
@@ -114,7 +118,7 @@ def render_status_bars(sc, player, x=10, y=220, width=500, bar_height=20, font_s
 
     # Render attack range
     range_text = font.render(f"Attack Range: {player.attack_range}", True, (255, 255, 255))
-    sc.blit(range_text, (x + 10, y + 70))
+    sc.blit(range_text, (x + 10, y + 80))
 
 
 
