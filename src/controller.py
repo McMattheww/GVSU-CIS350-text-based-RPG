@@ -1,6 +1,6 @@
 import time
 import pygame
-from pygame.locals import *
+
 
 ## misc. functions for use in main.py
 
@@ -71,7 +71,8 @@ def check_attack_selection(sc, keys, w1):
             w1.selectedEnemyIndex -= 1
         if w1.selectedEnemyIndex == -1:
             w1.selectedEnemyIndex = len(w1.enemyInRange) - 1
-        w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
+        if len(w1.enemyInRange) > 0:
+            w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
         rendermap(sc, w1)
         time.sleep(0.1)
     if keys[pygame.K_RIGHT]:
@@ -79,7 +80,8 @@ def check_attack_selection(sc, keys, w1):
             w1.selectedEnemyIndex += 1
         if w1.selectedEnemyIndex == len(w1.enemyInRange):
             w1.selectedEnemyIndex = 0
-        w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
+        if len(w1.enemyInRange) > 0:
+            w1.selectedEnemy = id(w1.enemyInRange[w1.selectedEnemyIndex])
         rendermap(sc, w1)
         time.sleep(0.1)
 
@@ -111,6 +113,8 @@ def confirm_attack_selection(sc, keys, w1):
 # matthew's function - working on rendering map squares around player each frame, and player himself
 def rendermap(sc, w1):
 
+    tile = pygame.image.load("80x80tile.bmp")
+
     pygame.draw.rect(sc, (0, 0, 0), (560, 0, 720, 720))  # black background for rooms
 
 
@@ -122,7 +126,8 @@ def rendermap(sc, w1):
 
         # render rectangles based of coordinates, only within 4 squares of player, on right side of screen
         if 16 > distance[0] > 6 and -1 < distance[1] < 9:
-            pygame.draw.rect(sc, (200, 200, 200), (distance[0] * 80, distance[1] * 80, 80, 80))
+            sc.blit(tile, (distance[0] * 80, distance[1] * 80, 80, 80))
+
 
 
     #render player
