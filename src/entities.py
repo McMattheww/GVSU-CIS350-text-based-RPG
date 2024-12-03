@@ -29,6 +29,9 @@ class Player:
                 return False  # Movement failed if room doesn't exist
         else:
             return False  # Invalid direction
+
+#function only needs to take in single enemy, indentation also needs fixing
+"""
 	def player_attack(player, enemy_list):
     # Filter enemies in the same room as the player
     enemies_in_room = [enemy for enemy in enemy_list if enemy.coordinates == player.coordinates]
@@ -57,7 +60,7 @@ class Player:
     except ValueError:
         print("Invalid input, please enter a number.")
         return False
-
+"""
 
 
 class Enemy:
@@ -72,6 +75,8 @@ def check_encounter(player, enemy):
     # Check if player and enemy are in the same room
     if player.coordinates == enemy.coordinates:
         enemy_attack(player)  # Trigger enemy attack if they are in the same room
+    else:
+        enemy_movement(enemy)  # Move the enemy if they are in different rooms
 def enemy_movement(enemy, player):
     # Calculate the difference in x and y coordinates between the enemy and player
     x_diff = player.coordinates[0] - enemy.coordinates[0]
@@ -91,8 +96,7 @@ def enemy_movement(enemy, player):
         else:
             enemy.coordinates = (enemy.coordinates[0], enemy.coordinates[1] - 1)  # Move south
 
-    else:
-        enemy_movement(enemy)  # Move the enemy if they are in different rooms
+
 def enemy_attack(player, enemy):
     # Reduce player's hitpoints by the enemy's strength
     player.hitpoints -= enemy.strength
