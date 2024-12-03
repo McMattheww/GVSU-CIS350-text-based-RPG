@@ -33,7 +33,7 @@ class World:
     def turn(self):
         # one turn of gameplay - should be run after a player action
         for enemy in self.enemyList:
-            #EN.check_encounter(self.player, enemy) #define enemy move and attack functions first
+            EN.check_encounter(self.player, enemy, self.rooms)
             pass
 
 

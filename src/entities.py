@@ -71,13 +71,13 @@ class Enemy:
         self.strength = strength            # Enemy's strength value
 
 
-def check_encounter(player, enemy):
+def check_encounter(player, enemy, room_list):
     # Check if player and enemy are in the same room
     if player.coordinates == enemy.coordinates:
-        enemy_attack(player)  # Trigger enemy attack if they are in the same room
+        enemy_attack(player, enemy)  # Trigger enemy attack if they are in the same room
     else:
-        enemy_movement(enemy)  # Move the enemy if they are in different rooms
-def enemy_movement(enemy, player):
+        enemy_movement(enemy, player, room_list)  # Move the enemy if they are in different rooms
+def enemy_movement(enemy, player, room_list):
     # Calculate the difference in x and y coordinates between the enemy and player
     x_diff = player.coordinates[0] - enemy.coordinates[0]
     y_diff = player.coordinates[1] - enemy.coordinates[1]
