@@ -58,15 +58,15 @@ def enemy_movement(enemy, player, room_list):
     # Determine the movement direction based on the difference in coordinates
     if abs(x_diff) > abs(y_diff):
         # Move in the x direction (east or west)
-        if x_diff > 0:
+        if x_diff > 0 and (enemy.coordinates[0] + 1, enemy.coordinates[1]) in room_list:
             enemy.coordinates = (enemy.coordinates[0] + 1, enemy.coordinates[1])  # Move east
-        else:
+        elif (enemy.coordinates[0] - 1, enemy.coordinates[1]) in room_list:
             enemy.coordinates = (enemy.coordinates[0] - 1, enemy.coordinates[1])  # Move west
     else:
         # Move in the y direction (north or south)
-        if y_diff > 0:
+        if y_diff > 0 and (enemy.coordinates[0], enemy.coordinates[1] + 1) in room_list:
             enemy.coordinates = (enemy.coordinates[0], enemy.coordinates[1] + 1)  # Move north
-        else:
+        elif (enemy.coordinates[0], enemy.coordinates[1] - 1) in room_list:
             enemy.coordinates = (enemy.coordinates[0], enemy.coordinates[1] - 1)  # Move south
 
 
