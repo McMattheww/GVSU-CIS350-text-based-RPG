@@ -43,10 +43,11 @@ class World:
         self.player.move(direction, self.rooms)
         self.turn()
 
-    def player_attack(self, targetID):
-        pass
-        #self.player.attack
-        #self.turn()
+    def player_attack(self, enemyID):
+        for enemy in self.enemyList:
+            if id(enemy) == enemyID:
+                self.player.player_attack(enemy, self.enemyList)
+                self.turn()
 
 
 ### end player actions ###

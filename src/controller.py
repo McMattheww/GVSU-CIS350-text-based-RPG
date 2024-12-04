@@ -33,15 +33,19 @@ def check_movement(sc, keys, w1, messages):
 def enter_attack_mode(sc, keys, w1):
     if keys[pygame.K_SPACE]:
         w1.attackmode = True
+        w1.enemyInRange.clear()
         for enemy in w1.enemyList:
             xDiff = abs(enemy.coordinates[0] - w1.player.coordinates[0])
             yDiff = abs(enemy.coordinates[1] - w1.player.coordinates[1])
             distance = xDiff + yDiff
-            if w1.player.attack_range >= distance and enemy.coordinates in w1.roomLOS[w1.player.coordinates]:
+            if w1.player.attack_range >= distance:
                 w1.enemyInRange.append(enemy)
-        w1.selectedEnemyIndex = 0
         if len(w1.enemyInRange) > 0:
             w1.selectedEnemy = id(w1.enemyInRange[0])
+        else:
+            w1.enemyInRange.clear()
+            w1.attackmode = False
+            w1.selectedEnemy = ''
         rendermap(sc, w1)
 
 #check if user presses escape to exit attack mode
