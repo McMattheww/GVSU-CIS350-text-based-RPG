@@ -15,4 +15,7 @@ None
 
 ## Run Instructions
 
-Download executable for your system (Windows, Mac, Linux) and run
+* Install Python version 3.x,
+* Instal Pygame, run command without quotes "py -m pip install pygame". Your python might not be called py, substitute py with whatever python is called on your system
+* run main.py to execute the game
+
