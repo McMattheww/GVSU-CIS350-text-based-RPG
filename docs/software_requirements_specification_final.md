@@ -5,12 +5,14 @@ Here is a list specifying the requirments we have met in our final product.
 
 ### <Map>
 | ID  | Requirement     | 
+| :-------------: | :----------: | 
 | FR1 | <Map shall be populated with interconnected rooms each with a unique (x, y) coordinate value> | 
 | FR2 | <Player character object representing the user shall populate a room> | 
 | FR3 | <Enemy objects shall populate rooms> | 
 
 ### <Graphics>
 | ID  | Requirement     | 
+| :-------------: | :----------: | 
 | FR4 | <Requirement 1> | 
 | FR5 | <Requirement 2> | 
 
@@ -18,6 +20,7 @@ Here is a list specifying the requirments we have met in our final product.
 
 ### <Player Character>  
 | ID  | Requirement     | 
+| :-------------: | :----------: | 
 | FR6 | <Player character shall be able to move to an adjacent room either directly north, east, south, or west> | 
 | FR7 | <Player character shall be able to attack an enemy, removing them from the game> | 
 | FR8 | <Player movement or attacking shall count as performing an action, giving the enemy a turn to act> | 
@@ -27,6 +30,7 @@ Here is a list specifying the requirments we have met in our final product.
   
 ### <User Input>
 | ID  | Requirement     | 
+| :-------------: | :----------: | 
 | FR1 | <Requirement 1> | 
 | FR2 | <Requirement 2> | 
 
@@ -39,6 +43,7 @@ Here is a list specifying the requirments we have met in our final product.
 
 ### <Enemies>
 | ID  | Requirement     |
+| :-------------: | :----------: | 
 | FR1 | <During the enemy turn to act, all enemies in the map shall perform one action> | 
 | FR2 | <enemies shall perform a movement for their action if the player character is in a seperate room> | 
 | FR3 | <enemies shall perform an attack for their action if th eplayer character is in the same room> | 
