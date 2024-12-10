@@ -17,5 +17,6 @@ None
 
 * Install Python version 3.x,
 * Instal Pygame, run command without quotes "py -m pip install pygame". Your python might not be called py, substitute py with whatever python is called on your system
-* run main.py to execute the game
+* Download and extract the files, you need everything in the src/ folder to remain in the same folder, (The readme and pycharm project folders are optional)
+* run main.py in src/ to execute the game
 
