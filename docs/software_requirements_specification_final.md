@@ -46,6 +46,13 @@ This document specifies requirments that have been met by our final product deli
 | NFR3 | Game shall achieve average 200 Mhz CPU usage in testing with message log rendered |
 | NFR4 | Game shall achieve average 200 Mhz CPU usage in testing with status bar rendered |
 
+### Compatability
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| NFR5 | Game shall run on Windows | 
+| NFR6 | Game shall run on Mac OS | 
+| NFR7 | Game shall run on Linux | 
+
 
 
 * User shall be able to run executable on Windows
