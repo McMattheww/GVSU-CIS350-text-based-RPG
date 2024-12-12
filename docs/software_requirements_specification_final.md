@@ -1,5 +1,5 @@
 # Software Requirements
-Here is a list specifying the requirments we have met in our final product.
+This document specifies requirments that have been met by our final product delivery, December 11, 2024.
 
 ## Functional Requirements 
 
@@ -69,7 +69,15 @@ TODO: add attack mode
 
 # Software Artifacts
 
-<Describe the purpose of this section>
+Here are various links to resources used in the course of development.
 
-* [I am a link](to_some_file.pdf)
+[Use Case Diagram](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/use_case_diagram/Use%20case%20diagram.pdf)
+
+[UI Mockup](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/UI%20Mockup.pdf))
+
+[Trello Board](https://trello.com/b/Vjng2tHl/text-based-rpg-scrum))
+
+[Extended Description](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/extended_description.md))
+
+
 
