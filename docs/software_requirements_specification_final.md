@@ -53,13 +53,11 @@ This document specifies requirments that have been met by our final product deli
 | NFR6 | Game shall run on Mac OS | 
 | NFR7 | Game shall run on Linux | 
 
-
-
-* User shall be able to run executable on Windows
-* User shall be able to run executable on MacOS
-* User shall be able to run executable on Linux
-
-
+### Accessability
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| NFR8 | Game shall require no precision mouse control | 
+| NFR9 | Game shall have lare, eqasy to distinguish icons for the player, enemies, and rooms | 
 
 
 # Software Artifacts
