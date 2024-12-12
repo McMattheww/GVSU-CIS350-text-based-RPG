@@ -13,32 +13,26 @@ Here is a list specifying the requirments we have met in our final product.
 ### Graphics
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| FR4 | <Requirement 1> | 
-| FR5 | <Requirement 2> | 
+| FR4 | The rooms surrounding the player character shall be drawn as a 9x9 grid of tiles | 
+| FR5 | green icon shall be drawn at the location of the player character | 
+| FR6 | red icon shall be drawn at the location of each enemy | 
+| FR7 | Status bar shall be drawn to indicate the palyer character's current health | 
+| FR8 | Message log shall display a message each time the player character moves | 
+
 
 
 
 ### Player Character> 
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| FR6 | Player character shall be able to move to an adjacent room either directly north, east, south, or west | 
+| FR6 | User shall be able to move player character to move to an adjacent room either directly north, east, south, or west, using up arrow, right arrow, down arrowm or left arrow | 
 | FR7 | Player character shall be able to attack an enemy, removing them from the game | 
 | FR8 | Player movement or attacking shall count as performing an action, giving the enemy a turn to act | 
 | FR9 | Player character shall have a health value, starting at 100 | 
+TODO: add attack mode
 
 
   
-### User Input
-| ID  | Requirement     | 
-| :-------------: | :----------: | 
-| FR1 | <Requirement 1> | 
-| FR2 | <Requirement 2> | 
-
-* User shall be able to press the up arrow key to move the player character north
-* User shall be able to press the right arrow key to move the player character east
-* User shall be able to press the down arrow key to move the player character south
-* User shall be able to press the left arrow key to move the player character west
-* TODO - attack mode stuff
   
 
 ### Enemies
@@ -46,10 +40,8 @@ Here is a list specifying the requirments we have met in our final product.
 | :-------------: | :----------: | 
 | FR1 | During the enemy turn to act, all enemies in the map shall perform one action | 
 | FR2 | Enemies shall perform a movement for their action if the player character is in a seperate room | 
-| FR3 | Enemies shall perform an attack for their action if th eplayer character is in the same room | 
-| FR3 | Enemy movement shall move the enemy to an adjacent room either directly north, east, south, or west | 
-| FR3 | During movement enemies shall move in a direction that gets them closer to the player | 
-| FR3 | Enemy attack shall reduce the amount of hitpoint the player character possesses | 
+| FR3 | Enemies shall perform an attack for their action if the player character is in the same room, reducing the player's health | 
+| FR3 | Enemy movement shall move the enemy to an adjacent room either directly north, east, south, or west, in an attempt to get closer to the player | 
 | FR3 | If the enemy attack lowers the player hitpoints to 0 or lower, the game shall end | 
 
 
