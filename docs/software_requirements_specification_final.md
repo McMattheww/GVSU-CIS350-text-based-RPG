@@ -19,45 +19,33 @@ This document specifies requirments that have been met by our final product deli
 | FR7 | Status bar shall be drawn to indicate the palyer character's current health | 
 | FR8 | Message log shall display a message each time the player character moves | 
 
-
-
-
-### Player Character> 
+### Player Character
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| FR6 | User shall be able to move player character to move to an adjacent room either directly north, east, south, or west, using up arrow, right arrow, down arrowm or left arrow | 
-| FR7 | Player character shall be able to attack an enemy, removing them from the game | 
-| FR8 | Player movement or attacking shall count as performing an action, giving the enemy a turn to act | 
-| FR9 | Player character shall have a health value, starting at 100 | 
-TODO: add attack mode
+| FR9 | User shall be able to move player character to move to an adjacent room | 
+| FR10 | Player character shall be able to attack an enemy, removing them from the game | 
+| FR11 | Player movement or attacking shall count as performing an action, giving the enemy a turn to act | 
+| FR12 | Player character shall have a health value, starting at 100 | 
 
-
-  
-  
 
 ### Enemies
 | ID  | Requirement     |
 | :-------------: | :----------: | 
-| FR1 | During the enemy turn to act, all enemies in the map shall perform one action | 
-| FR2 | Enemies shall perform a movement for their action if the player character is in a seperate room | 
-| FR3 | Enemies shall perform an attack for their action if the player character is in the same room, reducing the player's health | 
-| FR3 | Enemy movement shall move the enemy to an adjacent room either directly north, east, south, or west, in an attempt to get closer to the player | 
-| FR3 | If the enemy attack lowers the player hitpoints to 0 or lower, the game shall end | 
-
-
-
-
+| FR13 | During the enemy turn to act, all enemies in the map shall perform one action | 
+| FR14 | Enemies shall movement to an adjacent room for their action if the player character is in a seperate room, towards the player | 
+| FR15 | Enemies shall perform an attack for their action if the player character is in the same room, reducing the player's health | 
+ 
 
 ## Non-Functional Requirements
 
-### <Name of Feature 1> 
-
+### Performance
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| NFR1 | <Non-Functional Requirement 1> | 
-| NFR2 | < Non-Functional Requirement 2> |
-| NFR3 | < Non-Functional Requirement 3> |
-| … | … | 
+| NFR1 | Game shall achieve average 200 Mhz CPU usage in testing with at least 20 enemies drawn on screen | 
+| NFR2 | Game shall achieve average 200 Mhz CPU usage in testing with a map consisting of at least 100 rooms|
+| NFR3 | Game shall achieve average 200 Mhz CPU usage in testing with message log rendered |
+| NFR4 | Game shall achieve average 200 Mhz CPU usage in testing with status bar rendered |
+
 
 
 * User shall be able to run executable on Windows
@@ -73,11 +61,11 @@ Here are various links to resources used in the course of development.
 
 [Use Case Diagram](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/use_case_diagram/Use%20case%20diagram.pdf)
 
-[UI Mockup](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/UI%20Mockup.pdf))
+[UI Mockup](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/UI%20Mockup.pdf)
 
-[Trello Board](https://trello.com/b/Vjng2tHl/text-based-rpg-scrum))
+[Trello Board](https://trello.com/b/Vjng2tHl/text-based-rpg-scrum)
 
-[Extended Description](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/extended_description.md))
+[Extended Description](https://github.com/McMattheww/GVSU-CIS350-text-based-RPG/blob/main/artifacts/extended_description.md)
 
 
 
