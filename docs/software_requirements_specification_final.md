@@ -45,19 +45,29 @@ This document specifies requirments that have been met by our final product deli
 | NFR2 | Game shall achieve average 200 Mhz CPU usage in testing with a map consisting of at least 100 rooms|
 | NFR3 | Game shall achieve average 200 Mhz CPU usage in testing with message log rendered |
 | NFR4 | Game shall achieve average 200 Mhz CPU usage in testing with status bar rendered |
+| NFR5 | Game shall maintain a frame rate of at least 60 FPS under typical gameplay conditions |
 
 ### Compatability
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| NFR5 | Game shall run on Windows | 
-| NFR6 | Game shall run on Mac OS | 
-| NFR7 | Game shall run on Linux | 
+| NFR6 | Game shall run on Windows | 
+| NFR7 | Game shall run on Mac OS | 
+| NFR8 | Game shall run on Linux | 
+| NFR9 | Game shall support execution on both 32-bit and 64-bit operating systems |
 
 ### Accessability
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| NFR8 | Game shall require no precision mouse control | 
-| NFR9 | Game shall have lare, eqasy to distinguish icons for the player, enemies, and rooms | 
+| NFR10 | Game shall require no precision mouse control | 
+| NFR11 | Game shall have large, easy to distinguish icons for the player, enemies, and rooms |
+
+## Usability
+| ID  | Requirement     |
+| :-------------: | :----------: |  
+| NFR12 | Game shall ensure intuitive navigation for all in-game options and interactions |
+| NFR13 | Game shall minimize the number of steps required for common actions to streamline gameplay|
+| NFR14 | Game shall provide visual feedback for player actions such as movement or attacks |
+| NFR15 | Game shall have minimal visual clutter to enhance player focus on gameplay experience | 
 
 
 # Software Artifacts
